@@ -26,7 +26,7 @@ Since Pinot 1.1.0, the multi-stage query engine supports null handling if column
 
 You must use the multi-stage query engine (v2) to query distributed joins, window functions, and other multi-stage operators in real-time.
 
-The multi-stage query engine is built to run real-time, complex ANSI SQL ([ISO/IEC 9075](https://en.wikipedia.org/wiki/ISO/IEC\_9075)). Highlights include joins and data correlations, particularly optimized for dynamic broadcast fact-dim joins, and partitioned-based or colocated table joins.
+The multi-stage query engine is built to run real-time, complex ANSI SQL ([ISO/IEC 9075](https://en.wikipedia.org/wiki/ISO/IEC_9075)). Highlights include joins and data correlations, particularly optimized for dynamic broadcast fact-dim joins, and partitioned-based or colocated table joins.
 
 ## When not to use the multi-stage query engine?
 
@@ -120,5 +120,5 @@ Multi-stage queries are more expressive than single-stage queries, allowing to e
 
 In order to optimize multi-stage queries, you can follow these guidelines:
 
-* Study the [explain plan](https://github.com/pinot-contrib/pinot-docs/blob/latest/users/user-guide-query/multi-stage-query/understanding-multi-stage-explain.md).
-* Execute the query and analyze the [stage stats](https://github.com/pinot-contrib/pinot-docs/blob/latest/users/user-guide-query/multi-stage-query/understanding-stage-stats.md).
+* Study the [explain plan](../for-users/user-guide-query/query-syntax/explain-plan-multi-stage.md).
+* Execute the query and analyze the [stage stats](../for-users/user-guide-query/multi-stage-query/understanding-stage-stats.md).
